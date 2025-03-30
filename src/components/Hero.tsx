@@ -1,7 +1,6 @@
-
-import React from 'react';
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -14,27 +13,32 @@ const Hero = () => {
         <div className="mb-6 inline-block px-4 py-1.5 bg-white/30 backdrop-blur-sm rounded-full font-medium text-sm border border-white/20">
           🚀 Final Year Project Solutions
         </div>
-        
+
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">
-          Empower Your Final Year With An <span className="genz-gradient-text">Outstanding Project!</span>
+          Empower Your Final Year With An{" "}
+          <span className="genz-gradient-text">Outstanding Project!</span>
         </h1>
-        
+
         <p className="text-lg md:text-xl opacity-80 mb-10 max-w-2xl mx-auto">
-          We specialize in delivering innovative, high-quality final-year projects for students across various domains.
+          We specialize in delivering innovative, high-quality final-year
+          projects for students across various domains.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button onClick={scrollToContact} className="genz-button-primary px-8 py-6 text-lg">
+          <Button
+            onClick={scrollToContact}
+            className="genz-button-primary px-8 py-6 text-lg"
+          >
             Get Started
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          
-          <Button variant="outline" className="px-8 py-6 text-lg rounded-full border-2 hover:bg-white/20">
+
+          <Button className="px-8 py-6 text-lg rounded-full border-2 bg-white text-black hover:bg-white hover:border-purple-500 hover:text-purple-500">
             Explore Domains
           </Button>
         </div>
       </div>
-      
+
       <div className="mt-16 flex flex-wrap justify-center gap-8">
         <div className="animate-float">
           <div className="genz-card p-4 rotate-3 bg-genz-purple/10">
@@ -48,7 +52,7 @@ const Hero = () => {
         </div>
         <div className="animate-float" style={{ animationDelay: "1s" }}>
           <div className="genz-card p-4 rotate-2 bg-genz-blue/10">
-            <div className="font-bold text-lg">IoT</div>
+            <div className="font-bold text-lg">Mobile Applications</div>
           </div>
         </div>
         <div className="animate-float" style={{ animationDelay: "1.5s" }}>

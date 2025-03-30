@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -48,7 +47,7 @@
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 263 75% 63%; 
+    --primary: 263 75% 63%;
     --primary-foreground: 210 20% 98%;
 
     --secondary: 215 27.9% 16.9%;
@@ -76,8 +75,11 @@
 
   body {
     @apply bg-background text-foreground font-space;
-    background-image: 
-      radial-gradient(at 100% 80%, rgba(155, 135, 245, 0.12) 0px, transparent 50%),
+    background-image: radial-gradient(
+        at 100% 80%,
+        rgba(155, 135, 245, 0.12) 0px,
+        transparent 50%
+      ),
       radial-gradient(at 5% 25%, rgba(249, 115, 22, 0.1) 0px, transparent 50%);
     background-attachment: fixed;
   }
