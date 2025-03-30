@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,24 +63,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				genius: {
-					50: '#f0f7ff',
-					100: '#e0eefe',
-					200: '#b9ddfd',
-					300: '#7cc3fc',
-					400: '#36a6f9',
-					500: '#0d8aef',
-					600: '#006dcd',
-					700: '#0055a6',
-					800: '#064988',
-					900: '#0c3e71',
-					950: '#082652'
-				},
-				'soft-purple': '#E5DEFF',
-				'vivid-purple': '#8B5CF6',
-				'magenta-pink': '#D946EF',
-				'dark-charcoal': '#221F26',
-				'charcoal-gray': '#403E43'
+				// Gen Z inspired colors
+				genz: {
+					purple: '#9b87f5',
+					pink: '#D946EF',
+					orange: '#F97316',
+					blue: '#0EA5E9',
+					green: '#10B981',
+					yellow: '#FEF7CD'
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -103,15 +95,23 @@ export default {
 						height: '0'
 					}
 				},
-				'float': {
+				float: {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 5s ease-in-out infinite'
+				'float': 'float 6s ease-in-out infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite'
+			},
+			fontFamily: {
+				'space': ['Space Grotesk', 'sans-serif']
 			}
 		}
 	},

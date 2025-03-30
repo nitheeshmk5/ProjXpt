@@ -1,58 +1,28 @@
-import { useState } from "react";
-import { GraduationCap, Menu, X } from "lucide-react";
+
+import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <header className="bg-white sticky top-0 z-50 shadow-sm">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <GraduationCap className="w-8 h-8 text-vivid-purple mr-2" />
-            <span className="text-xl font-bold text-dark-charcoal">ProjXpt</span>
-          </div>
-          
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-genius-800 hover:text-genius-600 font-medium">Home</a>
-            <a href="#" className="text-genius-800 hover:text-genius-600 font-medium">Services</a>
-            <a href="#" className="text-genius-800 hover:text-genius-600 font-medium">Projects</a>
-            <a href="#" className="text-genius-800 hover:text-genius-600 font-medium">About</a>
-            <a href="#" className="text-genius-800 hover:text-genius-600 font-medium">Contact</a>
-          </nav>
-          
-          <div className="hidden md:block">
-            <Button className="bg-genius-600 hover:bg-genius-700 text-white">Get Started</Button>
-          </div>
-          
-          {/* Mobile menu button */}
-          <button 
-            className="md:hidden text-genius-800 hover:text-genius-600"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-        
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-genius-100">
-            <ul className="space-y-4">
-              <li><a href="#" className="block text-genius-800 hover:text-genius-600 font-medium">Home</a></li>
-              <li><a href="#" className="block text-genius-800 hover:text-genius-600 font-medium">Services</a></li>
-              <li><a href="#" className="block text-genius-800 hover:text-genius-600 font-medium">Projects</a></li>
-              <li><a href="#" className="block text-genius-800 hover:text-genius-600 font-medium">About</a></li>
-              <li><a href="#" className="block text-genius-800 hover:text-genius-600 font-medium">Contact</a></li>
-              <li className="pt-2">
-                <Button className="w-full bg-genius-600 hover:bg-genius-700 text-white">Get Started</Button>
-              </li>
-            </ul>
-          </nav>
-        )}
+    <nav className="sticky top-0 backdrop-blur-md bg-white/70 z-50 py-4 px-6 md:px-10 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        <div className="h-10 w-10 bg-gradient-to-tr from-genz-purple to-genz-pink rounded-full flex items-center justify-center text-white font-bold">P</div>
+        <span className="text-xl font-bold">ProjXpt</span>
       </div>
-    </header>
+      
+      <div className="hidden md:flex gap-8 font-medium">
+        <a href="#services" className="hover:text-primary transition-colors">Services</a>
+        <a href="#why-us" className="hover:text-primary transition-colors">Why Us</a>
+        <a href="#domains" className="hover:text-primary transition-colors">Domains</a>
+        <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+      </div>
+      
+      <Button variant="outline" className="hidden md:flex">
+        Contact Us
+      </Button>
+      
+      <button className="md:hidden text-xl">☰</button>
+    </nav>
   );
 };
 

@@ -1,25 +1,22 @@
 
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Features from "../components/Features";
-import Domains from "../components/Domains";
-import Process from "../components/Process";
-import Testimonials from "../components/Testimonials";
-import CTA from "../components/CTA";
-import Footer from "../components/Footer";
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import Domains from '@/components/Domains';
+import WhyUs from '@/components/WhyUs';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen">
       <Navbar />
-      <main className="flex-grow">
-        <Hero />
-        <Features />
-        <Domains />
-        <Process />
-        <Testimonials />
-        <CTA />
-      </main>
+      <Hero />
+      <Services />
+      <Domains />
+      <WhyUs />
+      <ContactForm />
       <Footer />
     </div>
   );
