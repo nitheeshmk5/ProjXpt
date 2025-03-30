@@ -1,69 +1,73 @@
-# Welcome to your Lovable project
+# ProjXpt - Final Year Project Guidance
 
-## Project info
+## About ProjXpt
 
-**URL**: https://lovable.dev/projects/569e5f59-dee4-4d5c-af65-28cf5c441ce7
+ProjXpt is a platform designed to help final-year students with their project development by providing affordable guidance, clear explanations, and complete documentation. Whether you're looking for customized projects, source code, or live demos, ProjXpt has you covered.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- 📋 **Customized Projects** - Tailored to meet your college requirements.
+- 💻 **Source Code & Documentation** - Complete and easy to understand (Premium Feature).
+- 🎯 **Live Demo & Guidance** - Learn while you build (Premium Feature).
+- 💰 **Affordable Pricing** - Student-friendly packages.
+- ⏱️ **On-Time Delivery** - Ensuring you meet your submission deadlines.
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/569e5f59-dee4-4d5c-af65-28cf5c441ce7) and start prompting.
+- **Frontend:** React, Tailwind CSS
+- **Icons:** Lucide React
+- **Backend:** (Specify if applicable)
+- **Database:** (Specify if applicable)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Installation
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To set up and run the project locally, follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/yourusername/projxpt.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate into the project directory
+cd projxpt
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Start the development server
+npm start
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+projxpt/
+├── src/
+│   ├── components/
+│   │   ├── Services.js
+│   │   ├── ... (other components)
+│   ├── assets/
+│   ├── pages/
+│   ├── App.js
+│   ├── index.js
+├── public/
+├── package.json
+├── README.md
+```
 
-**Use GitHub Codespaces**
+## Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contributions are welcome! If you’d like to contribute, please follow these steps:
 
-## What technologies are used for this project?
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Added new feature"`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request.
 
-This project is built with .
+## Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+For queries or project assistance, visit [ProjXpt](https://projxpt.web.app) or contact us via email at **your-email@example.com**.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/569e5f59-dee4-4d5c-af65-28cf5c441ce7) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+**ProjXpt - Making Final Year Projects Easier! 🚀**
