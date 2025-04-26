@@ -19,16 +19,6 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 
-// Initialize Firebase (Replace these with your Firebase config when deploying)
-/* const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-}; */
-
 const firebaseConfig = {
   apiKey: "AIzaSyAdYiyrzLpYuYduaHy7p4DO8BYGisTGa0U",
   authDomain: "projxpt.firebaseapp.com",
